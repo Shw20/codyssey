@@ -29,4 +29,5 @@ with open("logs.txt", "w", encoding="utf-8") as f:
 # 마크다운 저장
 found_errors = file_log("logs.txt")
 save_report(found_errors)
+print("Hello Mars")
 
