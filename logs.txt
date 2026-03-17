@@ -1,0 +1,4 @@
+System Start
+ERROR: CPU Fan Failure
+ERROR: Memory Overload
+System End
