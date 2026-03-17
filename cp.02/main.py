@@ -13,14 +13,14 @@ def file_log(file_name):
 def save_report(errors):
     # 파일 열기(with : 읽거나 쓰고난 뒤 파일을 닫아줌), 한글 깨짐 방지 위해 utf-8 인코딩
     with open("report.md", "w", encoding="utf-8") as f:
-        f.write("# 파악된 사고 원인\n")
+        f.write("에러\n")
         # 로그에서 err 키워드 포함시 골라냄
         if isinstance(errors, list) and errors:
             for err in errors:
                 f.write(f"- {err}\n")
         else:
             f.write("문제 없음\n")
-    print("보고서가 생성되었습니다")
+    print("파일 생성됨")
 
 # 임시 로그 파일 생성
 with open("logs.txt", "w", encoding="utf-8") as f:
