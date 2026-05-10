@@ -40,7 +40,7 @@ def unlock_zip_smart():
                     
                     if count % 100000 == 0:
                         elapsed = time.time() - start_time
-                        print(f'안전 가동 중... {count:,}회 시도 ({elapsed:.1f}초)')
+                        print(f'가동 중... {count:,}회 시도 ({elapsed:.1f}초)')
                     continue
 
     except Exception as e:
